@@ -1,0 +1,174 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="style.css">
+    <script src="https://code.jquery.com/jquery.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"></script>
+    
+    <title>Survey</title>
+</head>
+<body>
+   
+  <div class="container">
+  <form action="" class="survey">
+    <fieldset>
+        <legend>Survey Questions:</legend>
+        <h4>Name:</h4>
+        <input type="text" name="Name" id="name">
+        <br>
+
+      <h4>Link to Photo Image (Required)</h4>
+      <input type="text" id="photo" class="form-control">
+
+      <h3><strong>Question 1</strong></h3>
+      <h4>Does your regular routine consist of sleeping all day?</h4>
+      <select class="chosen-select" id="q1" required="">
+        <option value=""></option>
+        <option value="1">1 (Strongly Disagree)</option>
+        <option value="2">2</option>
+        <option value="3">3</option>
+        <option value="4">4</option>
+        <option value="5">5 (Strongly Agree)</option>
+      </select>
+
+      <h3><strong>Question 2</strong></h3>
+      <h4>Do you prioritize cleanliness?</h4>
+      <select class="chosen-select" id="q2" required="">
+        <option value=""></option>
+        <option value="1">1 (Strongly Disagree)</option>
+        <option value="2">2</option>
+        <option value="3">3</option>
+        <option value="4">4</option>
+        <option value="5">5 (Strongly Agree)</option>
+      </select>
+
+      <h3><strong>Question 3</strong></h3>
+      <h4>How do you feel about pets?</h4>
+      <select class="chosen-select" id="q3"required="">
+        <option value=""></option>
+        <option value="1">1 (Strongly Disagree)</option>
+        <option value="2">2</option>
+        <option value="3">3</option>
+        <option value="4">4</option>
+        <option value="5">5 (Strongly Agree)</option>
+      </select>
+
+      <h3><strong>Question 4</strong></h3>
+      <h4>To decompress after a busy day, do you like to play loud music</h4>
+      <select class="chosen-select" id="q4"required="">
+        <option value=""></option>
+        <option value="1">1 (Strongly Disagree)</option>
+        <option value="2">2</option>
+        <option value="3">3</option>
+        <option value="4">4</option>
+        <option value="5">5 (Strongly Agree)</option>
+      </select>
+
+      <h3><strong>Question 5</strong></h3>
+      <h4>People can rarely upset you.</h4>
+      <select class="chosen-select" id="q5"required="">
+        <option value=""></option>
+        <option value="1">1 (Strongly Disagree)</option>
+        <option value="2">2</option>
+        <option value="3">3</option>
+        <option value="4">4</option>
+        <option value="5">5 (Strongly Agree)</option>
+      </select>
+
+      <h3><strong>Question 6</strong></h3>
+      <h4>Do you prioritize quiet hours?</h4>
+      <select class="chosen-select" id="q6"required="">
+        <option value=""></option>
+        <option value="1">1 (Strongly Disagree)</option>
+        <option value="2">2</option>
+        <option value="3">3</option>
+        <option value="4">4</option>
+        <option value="5">5 (Strongly Agree)</option>
+      </select>
+
+      <h3><strong>Question 7</strong></h3>
+      <h4>In a discussion, truth should be more important than people’s sensitivities.</h4>
+      <select class="chosen-select" id="q7"required="">
+        <option value=""></option>
+        <option value="1">1 (Strongly Disagree)</option>
+        <option value="2">2</option>
+        <option value="3">3</option>
+        <option value="4">4</option>
+        <option value="5">5 (Strongly Agree)</option>
+      </select>
+
+      <h3><strong>Question 8</strong></h3>
+      <h4>Leaving food in the fridge well past the expiration day is okay.</h4>
+      <select class="chosen-select" id="q8"required="">
+        <option value=""></option>
+        <option value="1">1 (Strongly Disagree)</option>
+        <option value="2">2</option>
+        <option value="3">3</option>
+        <option value="4">4</option>
+        <option value="5">5 (Strongly Agree)</option>
+      </select>
+
+      <h3><strong>Question 9</strong></h3>
+      <h4>Traveling is a great way to blow off stress</h4>
+      <select class="chosen-select" id="q9"required="">
+        <option value=""></option>
+        <option value="1">1 (Strongly Disagree)</option>
+        <option value="2">2</option>
+        <option value="3">3</option>
+        <option value="4">4</option>
+        <option value="5">5 (Strongly Agree)</option>
+      </select>
+
+      <h3><strong>Question 10</strong></h3>
+      <h4>You feel more energetic after spending time with a group of people.</h4>
+      <select class="chosen-select" id="q10"required="">
+        <option value=""></option>
+        <option value="1">1 (Strongly Disagree)</option>
+        <option value="2">2</option>
+        <option value="3">3</option>
+        <option value="4">4</option>
+        <option value="5">5 (Strongly Agree)</option>
+      </select>
+
+      <br>
+      <br>
+
+      <!-- Submit Button -->
+      <button type="submit" class="btn btn-primary btn-lg btn-block" id="submit"><i class="fa fa-check-circle" aria-hidden="true"></i>
+      Submit</button>
+      </fieldset>
+      </form>
+
+    <hr>
+
+    <div id="myModal" class="modal">
+        <!-- Modal content -->
+        <div class="modal-content">
+          <span class="close">&times;</span>
+          <div id="match"></div>
+        </div>
+      
+      </div>   
+
+    <footer class="footer">
+      <div class="container">
+        <p><a href="/api/friends">API Friends List</a> | <a href="https://github.com/afhaque/friendfinder">GitHub Repo</a></p>
+      </div>
+    </footer>
+
+  </div>
+  <script type="text/js" src="/front.js">
+  
+  
+  
+  </script>
+</body>
+</html>
+
+
